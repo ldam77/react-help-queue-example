@@ -7,11 +7,13 @@ import { Switch, Route } from 'react-router-dom';
 import Moment from 'moment';
 import Admin from './Admin';
 import { v4 } from 'uuid';
+import { connect } from 'react-redux';
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
+    console.log(props);
     this.state = {
       masterTicketList: {},
       selectedTicket: null
@@ -60,4 +62,10 @@ class App extends React.Component {
 
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    masterTicketList: state
+  }
+}
+
+export default connect(mapStateToProps)(App);

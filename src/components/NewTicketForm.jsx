@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { v4 } from 'uuid';
 
 function NewTicketForm(props){
-  console.log(props);
   let _names = null;
   let _location = null;
   let _issue = null;

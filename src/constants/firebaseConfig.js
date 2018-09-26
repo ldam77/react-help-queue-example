@@ -1,5 +1,5 @@
 const firebaseConfig = {
-  apiKey: 'AIzaSyDZA9ZY8tkLjU-AK_EQJMT-nT__V7YKeeA',
+  apiKey: '',
   authDomain: 'react-help-queue-ld.firebaseapp.com',
   databaseURL: 'https://react-help-queue-ld.firebaseio.com',
   projectId: 'react-help-queue-ld',
